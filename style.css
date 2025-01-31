@@ -1,0 +1,170 @@
+@font-face {
+    font-family: BauerBodoni;
+    src: url("BauerBodoni.ttf") format('truetype'),
+         url("BauerBodoni.otf") format('opentype');
+}
+
+body {
+    font-family: BauerBodoni;
+    background-color: #f1e6d6;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header-top {
+    padding-top: 1.24em;
+    padding-bottom: 1.24em;
+    background-color: #f6dea3;
+    color: #222222;
+}
+
+.header-link-row {
+    padding-top: 1.24em;
+    padding-bottom: 1.24em;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.header-link {
+    padding: 0 0.8em;
+}
+
+.whoami-text {
+    text-align: justify;
+    padding: 0.75em;
+}
+
+.whoami-image {
+    float: left;
+    width: 27.34%;
+    height: auto;
+    margin: 2.2em;
+}
+@media screen and (orientation: portrait) {
+    .whoami-image {
+        width: 40.34%;
+    }
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-part {
+    width: 80%;
+    height: auto;
+    padding: 1.25em;
+}
+
+.showcase-section {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-bottom: 2px solid black;
+}
+
+.showcase-logo {
+    height: 8.0em;
+    width: auto;
+}
+
+.showcase-text {
+    width: 80%;
+}
+
+.certification-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+}
+
+@media screen and (orientation: landscape) {
+    .project-part {
+        width: 45%;
+    }
+}
+
+.project-text {
+    padding: 1.25em;
+}
+.project-description {
+    text-align: justify;
+}
+
+.project-scrot {
+    width: 100%;
+    height: auto;
+}
+
+.socials-image {
+    width: 30%;
+}
+.socials-side-icon {
+    width: 10%;
+    vertical-align: middle;
+}
+.socials-side-text {
+    padding-left: 0.4565em;
+}
+
+@media screen and (orientation: landscape) {
+    .showcase-section {
+        width: 80%;
+        margin: auto auto;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .header-top h1 {
+        font-size: 3em;
+    }
+    .header-top h2 {
+        font-size: 2em;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p, span {
+    font-size: 1.85em;
+    margin: 0.1em 0.1em;
+}
+
+a {
+    color: #440000;
+}
+
+a:visited {
+    color: #550000;
+}
+
+a:hover {
+    color: #cba135;
+}
+
+footer {
+    padding: 1.5em;
+}

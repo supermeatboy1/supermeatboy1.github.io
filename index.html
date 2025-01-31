@@ -1,92 +1,158 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Explore PH Tours</title>
-      <style type="text/css">
-         body {
-            max-width: 800px;
-            margin: auto auto;
-            background-color: #011539;
-         }
-         #logo {
-            max-width: 3.0em;
-            max-height: 3.0em;
-            vertical-align: middle;
-            padding-right: 0.2em;
-         }
-         #content {
-            background-color: palegoldenrod;
-            padding: 1.0em 1.5em;
-         }
-         #banner {
-            max-width: 740px;
-            margin: auto auto;
-         }
-         #beach_photo {
-            text-align: center;
-         }
-         header {
-            text-align: center;
-         }
-         footer {
-            text-align: center;
-         }
-      </style>
-   </head>
-   <body>
-      <div id="content">
-      <header>
-         <h1><img src="https://png.pngtree.com/png-clipart/20230521/original/pngtree-beach-logo-design-vector-or-t-shirt-png-image_9166769.png" alt="" id="logo" />Explore PH Tours Landing Page</h1>
-         <hr>
-         <nav>
-            <p>
-               <a href="#">Home</a> | 
-               <a href="#">Services</a> | 
-               <a href="#">Promos</a> | 
-               <a href="#">Contact</a>
-            </p>
-         </nav>
-         <hr>
-         <br>
-         <img src="https://i.pinimg.com/originals/f7/07/10/f70710ebaeeaf506e07caf25c7379874.jpg" alt="" id="banner" />
-         <h2>#1 source of <i>affordable and comfortable</i> trips!</h2>
-      </header>
-      <hr>
-      <main>
-         <section style="text-align: justify;">
-            <p>
-               &emsp;<b>Explore PH Tours</b> is your gateway to unforgettable Philippine adventures. With branches in Manila, Cebu, and Davao,
-               they offer curated travel packages and guided tours. From hotel bookings to transport reservations, Explore PH Tours ensures hassle-free trip planning, showcasing the best of Luzon, Visayas,
-               and Mindanao. Discover top attractions all with expert guides and exclusive promos! Let Explore PH Tours make your journey memorable!
-            </p>
-         </section>
-         <h3>Book your next adventure today!</h3>
-         <section style="text-align: justify;">
-            <p>
-               <b>Explore PH Tours</b> offers island hopping, guided city tours, mountain treks, hotel bookings, and custom itineraries.
-               Enjoy promotions like "3+1 Free" group deals, early booking discounts, and special weekend rates. Popular packages
-               include the Intramuros Tour in Manila, Whale Shark Watching in Cebu, and Mt. Apo Climbing in Davao.
-            </p>
-            <p>
-               Explore the Philippines like never before with our exciting packages. Limited slots available for promo deals. Don't miss out!
-            </p>
-         </section>
-         <button>Book Now</button>
-         <br>
-         <p>Feel free to contact us!<br>Manila: (+63) 123-4567 | Cebu: (+63) 234-5678 | Davao: (+63) 345-6789</p>
-         <br>
-         <br>
-         <div id="beach_photo">
-            <img src="https://w7.pngwing.com/pngs/762/396/png-transparent-beach-beach-computer-wallpaper-palm-tree-world-thumbnail.png" alt="" id="beach_photo" />
-         </div>
-         <br>
-         <br>
-      </main>
-      <hr>
-      <footer>
-         <p>&copy; 2023 - 2024 Explore PH Tours</p>
-         <p>Manila: (+63) 123-4567 | Cebu: (+63) 234-5678 | Davao: (+63) 345-6789</p>
-      </footer>
+<html lang="en_PH">
+  <head>
+    <meta charset="utf-8">
+    <title>portfolio...</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-top text-center">
+        <h1>Juan Miguel Agunod</h1>
+        <h2>Portfolio website</h2>
       </div>
-   </body>
+      <div class="header-link-row text-center">
+        <span>
+          <a href="#whoami" class="header-link">Who am I...</a>
+          <a href="#projects" class="header-link">Projects</a>
+          <a href="#certs" class="header-link">Certifications</a>
+          <a href="#contact" class="header-link">Contact</a>
+        </span>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div id="whoami" class="showcase-section">
+          <h1 class="text-center">Who am I...</h1>
+          <div class="whoami-text">
+            <img src="img/me.png" alt="" class="whoami-image" />
+            <p>&nbsp; I’m a second year computer science student who loves diving into different programming languages like Scala, Erlang, JavaScript, Rust, HTML, and CSS. Whether it’s building solid backend systems, handling concurrency, or tweaking UI elements, I enjoy tackling problems from different angles. I like experimenting with functional, concurrent, and object-oriented programming, which helps me adapt to all kinds of projects.</p><br>
+            <p>&nbsp; Lately, I’ve also been getting into graphics programming, learning how rendering works under the hood. I focus on writing clean, efficient, and maintainable code, and I’m always up for picking up new tech and improving my skills. I thrive in fast-paced environments where I can build cool, impactful stuff.</p>
+          </div>
+        </div>
+        <div id="projects" class="showcase-section">
+          <h1 class="text-center">Projects:</h1>
+          <div class="project-container">
+            <div class="project-part">
+              <div class="text-center">
+                <img src="img/scrots/software-fps.png" alt="A screenshot of Software FPS Project" class="project-scrot" />
+              </div>
+              <div class="project-text">
+                <h2 class="text-center">FPS Game<br>(Software Rendered)</h2><br>
+                <div class="project-description">
+                  <p>A stripped-down Doom / Wolfenstein-style shooter with pseudo-3D software rendering. Built to learn the basics of rendering from scratch.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-part">
+              <div class="text-center">
+                <img src="img/scrots/attendance.png" alt="A screenshot of RFID Attendance Checker" class="project-scrot text-center" />
+              </div>
+              <div class="project-text">
+                <h2 class="text-center">RFID Attendance Tracker</h2><br>
+                <div class="project-description">
+                  <p>An automated attendance system for a school event using RFID scanners and a PostgreSQL database. Helped streamline check-ins and learned some valuable database skills.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-part">
+              <div class="text-center">
+                <img src="img/scrots/java-3d-renderer.png" alt="A screenshot of Java 3D Software Renderer" class="project-scrot text-center" />
+              </div>
+              <div class="project-text">
+                <h2 class="text-center">Java 3D Software Renderer</h2><br>
+                <div class="project-description">
+                  <p>A basic 3D renderer built to understand the rendering pipeline and apply linear algebra concepts. Loads a 3D OBJ model with a texture and displays it. Pure software rendering, no GPU required.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-part">
+              <div class="text-center">
+                <img src="img/scrots/comlab.png" alt="A screenshot of Computer Lab Manager" class="project-scrot text-center" />
+              </div>
+              <div class="project-text">
+                <h2 class="text-center">Computer Lab Manager</h2><br>
+                <div class="project-description">
+                  <p>A system to monitor and control lab computers, track usage time, bill users, and allow admins to message, send files, and remotely control machines.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-part">
+              <div class="text-center">
+                <img src="img/scrots/codequest.png" alt="A screenshot of Codequest (Programming Learning Platform)" class="project-scrot text-center" />
+              </div>
+              <div class="project-text">
+                <h2 class="text-center">Codequest<br>(Programming Learning Platform)</h2><br>
+                <div class="project-description">
+                  <p>A lightweight coding challenge platform using Cowboy for web serving and Erlang processes to run user-submitted code in Docker, comparing outputs against test cases. Players are rewarded based on test cases they've correctly answered.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-part">
+              <div class="text-center">
+                <img src="img/scrots/inventory.png" alt="A screenshot of BakeTrack (Inventory System)" class="project-scrot text-center" />
+              </div>
+              <div class="project-text">
+                <h2 class="text-center">BakeTrack<br>(Inventory System)</h2><br>
+                <div class="project-description">
+                  <p>A .NET + SQL Server app to track ingredients, purchases, and stock levels, with alerts for low inventory to ensure smooth bakery operations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="certs" class="showcase-section">
+          <h1 class="text-center">Certifications:</h1>
+          <div class="certification-section">
+            <img src="img/swift.png" alt="Apple's Swift logo" class="showcase-logo"/>
+            <div class="showcase-text">
+              <h2 class="text-center">App Development with Swift Associate</h2>
+              <p class="text-center">From Apple, Issued Dec 2023</p>
+              <p class="text-center"><a href="https://www.credly.com/badges/f243a9e3-a179-452d-9ce6-173332fa040c/linked_in_profile">Credential Link</a></p>
+            </div><br>
+          </div>
+          <div class="certification-section">
+            <img src="img/duke.gif" alt="Java Mascot 'Duke'" class="showcase-logo" style="border: 1px solid black;" />
+            <div class="showcase-text">
+              <h2 class="text-center">Learning Java 17</h2>
+              <p class="text-center">From LinkedIn, Issued Feb 2024</p>
+              <p class="text-center"><a href="https://www.linkedin.com/learning/certificates/38c38c87d911813dab16ebff6525a41e53a12b95e99424d1d445ff1719515adf?u=89213594">Credential Link</a></p>
+            </div><br>
+          </div>
+          <div class="certification-section">
+            <img src="img/ms.png" alt="Microsoft Logo" class="showcase-logo"/>
+            <div class="showcase-text">
+              <h2 class="text-center">Microsoft Office Specialist:<br>Excel Associate (Office 2019)</h2>
+              <p class="text-center">From Microsoft, Issued Sept 2023</p>
+              <p class="text-center">Credential ID: 995609304</p>
+              <p class="text-center"><a href="https://www.credly.com/badges/a0883875-e034-4d59-8563-a9f1dd441339/linked_in_profile4">Credential Link</a></p>
+            </div><br>
+
+          </div>
+        </div>
+        <div id="contact" class="showcase-section text-center socials-section">
+          <h1 class="text-center">Contact:</h1>
+          <br>
+          <a href="https://www.linkedin.com/in/juan-agunod-172428253/">
+            <img src="img/socials/linkedin.png" alt="LinkedIn" class="socials-image" />
+          </a>
+          <br><br>
+          <a href="mailto:jmagunod@hotmail.com">
+            <img src="img/socials/email.png" alt="Email" class="socials-side-icon" />
+            <span class="socials-side-text">jmagunod@hotmail.com</span>
+          </a>
+          <br><br>
+          <a href="https://github.com/supermeatboy1">
+            <img src="img/socials/github.png" alt="Github" class="socials-image" />
+          </a>
+          <br><br>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="text-center">
+        <h3>&copy; 2025 Juan Miguel Agunod</h3>
+      </div>
+    </footer>
+  </body>
 </html>
