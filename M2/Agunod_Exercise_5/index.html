@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #09122C;
+      }
+
+      #quoteDisplay {
+        margin: 20px 0;
+        font-size: 1.5em;
+        color: #E17564;
+      }
+
+      #header {
+        color: #BE3144;
+      }
+
+      #author {
+        font-style: italic;
+        color: #BE3144;
+      }
+      #throbber {
+        display: none;
+        margin: auto auto;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #872341;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Random Quote Generator</h1>
+    <div id="quoteDisplay">
+      <p id="quote">Click the button to get a random quote!</p>
+      <p id="author"></p>
+    </div>
+    <button id="newQuoteBtn">Get New Quote</button>
+    <img src="throbber.gif" alt="" id="throbber">
+    <script>
+      const quoteElement = document.getElementById('quote');
+      const authorElement = document.getElementById('author');
+      const throbberElement = document.getElementById('throbber');
+      const button = document.getElementById('newQuoteBtn');
+      // Function to fetch a random quote
+      function fetchQuote() {
+        // Show loading message while fetching
+        quoteElement.textContent = 'Loading quote...';
+        authorElement.textContent = '';
+        throbberElement.style.display = "inherit";
+
+        // Fetch all quotes from the DummyJSON API
+        fetch('https://dummyjson.com/quotes').then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        }).then(data => {
+          // Get a random quote from the list of quotes
+          const randomIndex = Math.floor(Math.random() * data.quotes.length);
+          const randomQuote = data.quotes[randomIndex];
+          // Display the quote and author
+          quoteElement.textContent = `"${randomQuote.quote}"`;
+          authorElement.textContent = `- ${randomQuote.author}`;
+          throbberElement.style.display = "none";
+        }).catch(error => {
+          // Handle any errors that occur during the fetch
+          console.error('Error fetching quote:', error);
+          quoteElement.textContent = 'Failed to load quote. Please try again.';
+          authorElement.textContent = '';
+          throbberElement.style.display = "none";
+        });
+      }
+      // Fetch a quote when the button is clicked
+      button.addEventListener('click', fetchQuote);
+      // Fetch a quote when the page loads
+      fetchQuote();
+    </script>
+  </body>
+</html>

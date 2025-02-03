@@ -1,0 +1,94 @@
+@font-face {
+    font-family: BauerBodoni;
+    src: url("BauerBodoni.ttf") format('truetype'),
+         url("BauerBodoni.otf") format('opentype');
+}
+
+body, input[type=text] {
+    font-family: BauerBodoni;
+    background-color: #FBF5E5;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0 0;
+    font-weight: normal;
+    color: #212121;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p, span {
+    font-size: 1.85em;
+    margin: 0.1em 0.1em;
+}
+
+a {
+    color: #C890A7;
+}
+
+a:visited {
+    color: #A35C7A;
+}
+
+a:hover {
+    color: #A35C7A;
+}
+
+.text-center {
+	text-align: center;
+}
+.input-element {
+	margin: 0 1.25em;
+}
+.input-text-box {
+    height: 1.75em;
+    width: 80%;
+    border: 2px solid #A35C7A;
+    border-radius: 0.4em;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    padding: 0 0.5em;
+}
+#submit {
+    background-color: #C890A7;
+    color: #FBF5E5;
+    border: none;
+    margin-top: 0.5em;
+    border-radius: 0.75em;
+    height: 3.6em;
+    width: 10vh;
+}
+#submit:hover {
+    background-color: #A35C7A;
+}
+#submit:active {
+    background-color: #212121;
+}
+
+@media screen and (orientation: landscape) {
+    .input-text-box {
+        width: 50%;
+    }
+    #submit {
+        width: 10%;
+    }
+}
+
+header, main, footer {
+	margin: 1.5em;
+}
